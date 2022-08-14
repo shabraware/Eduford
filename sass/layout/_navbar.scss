@@ -4,6 +4,8 @@
   align-items: center;
   justify-content: space-between;
   position: relative;
+  overflow-x: clip;
+
   &__logo {
     display: inline-block;
     width: 14rem;

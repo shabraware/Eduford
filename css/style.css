@@ -115,7 +115,8 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: relative; }
+  position: relative;
+  overflow-x: clip; }
   .navbar__logo {
     display: inline-block;
     width: 14rem; }

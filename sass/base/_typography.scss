@@ -1,0 +1,43 @@
+.heading-1 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 600;
+  font-size: 6.4rem;
+}
+
+.heading-2 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 600;
+  font-size: 4rem;
+  color: $color-black;
+  &--white {
+    color: $color-white;
+  }
+}
+
+.heading-3 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 600;
+  font-size: 2.4rem;
+  color: $color-black;
+}
+
+.heading-4 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
+  &--white {
+    color: $color-white;
+  }
+}
+
+.paragraph {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+  font-size: 1.5rem;
+  line-height: 1.6;
+  letter-spacing: 0.1rem;
+  color: $color-gray-middle;
+  &--white {
+    color: $color-white;
+  }
+}

@@ -1,0 +1,20 @@
+.btn {
+  &,
+  &:link,
+  &:visited {
+    display: inline-block;
+    padding: 1.5rem 4.5rem;
+    background-color: transparent;
+    border-style: solid;
+    border-color: $color-white;
+    color: $color-white;
+    cursor: pointer;
+    transition: all 1s;
+    outline: none;
+  }
+  &:active,
+  &:hover {
+    background-color: $color-tertiary;
+    border-color: $color-tertiary;
+  }
+}

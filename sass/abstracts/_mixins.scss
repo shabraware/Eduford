@@ -1,0 +1,48 @@
+@mixin clearfix {
+  &::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin abs-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*
+$BreakPoint argument choices
+phone
+tab-port
+tab-land
+big-desktop
+*/
+@mixin respond($BreakPoint) {
+  @if $BreakPoint==phone {
+    @media (max-width: 37.5em) {
+      // max-width = 600px
+      @content;
+    }
+  }
+  @if $BreakPoint==tab-port {
+    @media (max-width: 56.25em) {
+      // max-width = 900px
+      @content;
+    }
+  }
+  @if $BreakPoint==tab-land {
+    @media (max-width: 75em) {
+      // max-width = 1200px
+      @content;
+    }
+  }
+  @if $BreakPoint==big-desktop {
+    @media (min-width: 112.5em) {
+      // min-width = 1800px
+      @content;
+    }
+  }
+}

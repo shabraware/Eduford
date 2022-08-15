@@ -17,4 +17,11 @@
     background-color: $color-tertiary;
     border-color: $color-tertiary;
   }
+  &--red {
+    border-color: $color-primary;
+    color: $color-tertiary;
+    &:hover {
+      color: $color-white;
+    }
+  }
 }

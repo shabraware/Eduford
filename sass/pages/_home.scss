@@ -148,13 +148,14 @@
       }
     }
   }
-  .contact {
-    background-color: orchid;
+  .contact-info {
     grid-column: full-start/full-end;
     text-align: center;
-    padding: 12rem 0;
+    padding: 12rem 3rem;
     border-radius: 1rem;
     background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
       url(../../images/banner2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
   }
 }

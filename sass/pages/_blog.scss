@@ -1,0 +1,56 @@
+.blog {
+  display: grid;
+  grid-template-rows: 50vh repeat(2, min-content);
+  grid-template-columns:
+    [full-start] minmax(6rem, 1fr)
+    [center-start]
+    repeat(8, minmax(min-content, 14rem))
+    [center-end]
+    minmax(6rem, 1fr) [full-end];
+  grid-row-gap: 10rem;
+
+  .header {
+    grid-column: full-start/full-end;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+      url(../../images/background.jpg);
+    background-position: 50% 60%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: $color-white;
+    position: relative;
+
+    .hero-text {
+      text-align: center;
+      @include abs-center;
+      width: 90%;
+      h2 {
+        transform: translateY(5rem);
+      }
+    }
+  }
+  .posts {
+    grid-column: center-start/center-end;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-column-gap: 4rem;
+    &__image {
+      img {
+        width: 100%;
+      }
+    }
+    h5 {
+      padding: 1rem 2rem;
+    }
+    &__categorie {
+      display: flex;
+      justify-content: space-between;
+      padding: 1rem 2rem;
+      cursor: pointer;
+    }
+    @include respond(phone) {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(2, min-content);
+      grid-row-gap: 4rem;
+    }
+  }
+}

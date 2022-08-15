@@ -4,6 +4,8 @@
   margin: 0;
   padding: 0;
   box-sizing: inherit;
+  outline: none;
+  border: none;
 }
 
 html {
@@ -21,11 +23,36 @@ html {
   }
 }
 
+html {
+  &::-webkit-scrollbar {
+    width: 1rem;
+  }
+  &::-webkit-scrollbar-track {
+    background-color: $color-secondary;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: $color-primary;
+  }
+}
+
 body {
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 300;
+  font-size: 1.5rem;
+  line-height: 1.6;
+  letter-spacing: 0.1rem;
+  color: $color-gray-middle;
 }
 
 a {
   text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+::selection {
+  background-color: $color-primary;
+  color: $color-secondary;
 }

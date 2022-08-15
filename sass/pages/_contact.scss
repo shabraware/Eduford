@@ -1,0 +1,63 @@
+.contact {
+  display: grid;
+  grid-template-rows: 50vh repeat(3, min-content);
+  grid-template-columns:
+    [full-start] minmax(6rem, 1fr)
+    [center-start]
+    repeat(8, minmax(min-content, 14rem))
+    [center-end]
+    minmax(6rem, 1fr) [full-end];
+  grid-row-gap: 10rem;
+
+  .header {
+    grid-column: full-start/full-end;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+      url(../../images/background.jpg);
+    background-position: 50% 60%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: $color-white;
+    position: relative;
+
+    .hero-text {
+      text-align: center;
+      @include abs-center;
+      width: 90%;
+      h2 {
+        transform: translateY(5rem);
+      }
+    }
+  }
+  .location {
+    grid-column: center-start/center-end;
+    iframe {
+      width: 100%;
+      border: none;
+      height: 40vw;
+    }
+  }
+  .contactus {
+    grid-column: center-start/center-end;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 4rem;
+    &__item {
+      & > div {
+        display: grid;
+        grid-template-columns: 3rem 1fr;
+        grid-column-gap: 3rem;
+        margin-bottom: 2rem;
+        .fa {
+          font-size: 3rem;
+          color: $color-primary;
+          align-self: center;
+        }
+      }
+    }
+    @include respond(phone) {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(2, min-content);
+      grid-row-gap: 4rem;
+    }
+  }
+}

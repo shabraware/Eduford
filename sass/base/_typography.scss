@@ -2,6 +2,10 @@
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 600;
   font-size: 6.4rem;
+  color: $color-black;
+  &--white {
+    color: $color-white;
+  }
 }
 
 .heading-2 {
@@ -25,8 +29,24 @@
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 600;
   font-size: 2rem;
+  color: $color-black;
   &--white {
     color: $color-white;
+  }
+  &--thin {
+    font-weight: 300;
+  }
+}
+.heading-5 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 600;
+  font-size: 1.6rem;
+  color: $color-black;
+  &--white {
+    color: $color-white;
+  }
+  &--redbg {
+    background-color: $color-primary;
   }
 }
 

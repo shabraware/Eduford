@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eduford</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="contact">
+    <!-- Header start -->
+    <header class="header">
+      <nav class="navbar">
+        <a href="index.html" class="navbar__logo">
+          <img src="/images/logo.png" alt="logo" />
+        </a>
+        <ul class="navbar__list" id="navbar__list">
+          <li class="navbar__item">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+          </li>
+          <li class="navbar__item">
+            <a href="index.html" class="navbar__link">home</a>
+          </li>
+          <li class="navbar__item">
+            <a href="about.html" class="navbar__link">about</a>
+          </li>
+          <li class="navbar__item">
+            <a href="course.html" class="navbar__link">course</a>
+          </li>
+          <li class="navbar__item">
+            <a href="blog.html" class="navbar__link">blog</a>
+          </li>
+          <li class="navbar__item navbar__item--active">
+            <a href="contact.html" class="navbar__link">contact</a>
+          </li>
+        </ul>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <div class="hero-text">
+        <h2 class="heading-2 heading-2--white mb-md">Contact Us</h2>
+      </div>
+    </header>
+    <!-- Header end -->
+    <!-- Location start -->
+    <section class="location">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7096.425785625174!2d75.700243!3d27.212465!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb78e5c340c935a95!2sUniversity%20of%20Engineering%20%26%20Management%20(UEM)%2C%20Jaipur!5e0!3m2!1sen!2som!4v1660571000075!5m2!1sen!2som"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </section>
+    <!-- Location end -->
+    <!-- Contact Us start -->
+    <section class="contactus">
+      <div class="contactus__item">
+        <div>
+          <i class="fa fa-home"></i>
+          <div>
+            <h4 class="heading-4 heading-4--thin">
+              University of Engineering and Management, Gurukul Campus
+            </h4>
+            <p>Jaipur, Rajasthan, India</p>
+          </div>
+        </div>
+        <div>
+          <i class="fa fa-phone"></i>
+          <div>
+            <h4 class="heading-4 heading-4--thin">+91 6378281761</h4>
+            <p>Monday to Saturday, 10AM to 6PM</p>
+          </div>
+        </div>
+        <div>
+          <i class="fa fa-envelope-o"></i>
+          <div>
+            <h4 class="heading-4 heading-4--thin">email@gmail.com</h4>
+            <p>Email us your queries</p>
+          </div>
+        </div>
+      </div>
+      <div class="contactus__item">
+        <form action="" class="form">
+          <div class="form__control">
+            <input type="text" name="name" placeholder="Enter Your Name" />
+          </div>
+          <div class="form__control">
+            <input type="email" name="email" placeholder="Enter Your Email" />
+          </div>
+          <div class="form__control">
+            <input type="text" name="email" placeholder="Enter Your Subject" />
+          </div>
+          <div class="form__control">
+            <textarea
+              name="comment"
+              cols="30"
+              rows="10"
+              placeholder="Your Message"
+            ></textarea>
+          </div>
+          <div class="form__actions">
+            <button type="submit" class="btn btn--blue">Send Message</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- Contact Us end -->
+    <!-- Footer start -->
+    <section class="footer">
+      <h3 class="heading-3 mb-lg">About Us</h3>
+      <p class="paragraph mb-lg">
+        We’re a leading research university with a heart. Founded in the decade
+        that the U.S. Constitution was signed, we’re the nation’s oldest
+        Catholic and Jesuit university. We’re a community of people who bridge
+        our disparate experiences and identities. Meet the people and places
+        that make Eduford home.
+      </p>
+      <p class="paragraph mb-sm">
+        Made by
+        <a href="https://www.linkedin.com/in/yousef-elshabrawy-965a69197/"
+          >Yousef Elshabrawy</a
+        >
+      </p>
+    </section>
+    <!-- Footer end -->
+    <script>
+      const nav = document.getElementById('navbar__list');
+      function showMenu() {
+        nav.style.right = '0px';
+      }
+      function hideMenu() {
+        nav.style.right = '-60rem';
+      }
+    </script>
+  </body>
+</html>

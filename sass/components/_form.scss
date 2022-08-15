@@ -1,0 +1,15 @@
+.form {
+  border: 0.1rem solid $color-gray-light;
+  padding: 1rem 2rem;
+  &__control {
+    input,
+    textarea {
+      display: block;
+      width: 100%;
+      border: none;
+      padding: 1.2rem;
+      margin: 0 0 2rem 0;
+      background-color: $color-gray-light;
+    }
+  }
+}

@@ -24,4 +24,11 @@
       color: $color-white;
     }
   }
+  &--blue {
+    border-color: $color-tertiary;
+    color: $color-tertiary;
+    &:hover {
+      color: $color-white;
+    }
+  }
 }

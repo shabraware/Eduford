@@ -23,6 +23,9 @@
       text-align: center;
       @include abs-center;
       width: 90%;
+      h2 {
+        transform: translateY(5rem);
+      }
     }
   }
   .aboutus {

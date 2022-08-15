@@ -1,0 +1,85 @@
+.course {
+  display: grid;
+  grid-template-rows: 50vh repeat(3, min-content);
+  grid-template-columns:
+    [full-start] minmax(6rem, 1fr)
+    [center-start]
+    repeat(8, minmax(min-content, 14rem))
+    [center-end]
+    minmax(6rem, 1fr) [full-end];
+  grid-row-gap: 10rem;
+
+  .header {
+    grid-column: full-start/full-end;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+      url(../../images/background.jpg);
+    background-position: 50% 60%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: $color-white;
+    position: relative;
+
+    .hero-text {
+      text-align: center;
+      @include abs-center;
+      width: 90%;
+      h2 {
+        transform: translateY(5rem);
+      }
+    }
+  }
+  .courses {
+    grid-column: center-start/center-end;
+    text-align: center;
+    &__list {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-column-gap: 4rem;
+    }
+    &__item {
+      background-color: $color-secondary;
+      padding: 3rem;
+      border-radius: 1rem;
+      transition: box-shadow 0.6s;
+      &:hover {
+        box-shadow: 0 0 2rem 0.8rem rgba(0, 0, 0, 0.2);
+      }
+    }
+    @include respond(phone) {
+      &__list {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, min-content);
+        grid-row-gap: 4rem;
+      }
+    }
+  }
+  .facilities {
+    grid-column: center-start/center-end;
+    &__list {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-column-gap: 4rem;
+    }
+    &__image {
+      img {
+        width: 100%;
+        border-radius: 1rem;
+      }
+    }
+    @include respond(phone) {
+      &__list {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, min-content);
+        grid-row-gap: 4rem;
+      }
+    }
+  }
+  .contact {
+    grid-column: full-start/full-end;
+    text-align: center;
+    padding: 12rem 0;
+    border-radius: 1rem;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+      url(../../images/banner2.jpg);
+  }
+}
